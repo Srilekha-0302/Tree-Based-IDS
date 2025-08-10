@@ -22,6 +22,8 @@ IDS-TreeBased/
 
 ├── results/ # Confusion matrices, comparison tables, plots
 
+├── documentation.docx # Project Documentation
+
 ├── README.md # Project documentation
 
 ├── requirements.txt # Python dependencies
