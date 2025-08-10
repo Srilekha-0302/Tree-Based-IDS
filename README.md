@@ -76,7 +76,7 @@ IDS-TreeBased/
 ## 🚀 How to Run
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/IDS-TreeBased.git
+git clone https://github.com/Srilekha-0302/Tree-Based-IDS.git
 cd IDS-TreeBased
 
 # Install dependencies
