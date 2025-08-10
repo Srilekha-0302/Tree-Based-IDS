@@ -14,11 +14,16 @@ The system is evaluated using **accuracy, precision, recall, F1-score**, confusi
 ## 📂 Project Structure
 IDS-TreeBased/
 │
-├── data/ # Dataset files 
+├── data/ # Dataset files
+
 ├── notebooks/ # Jupyter notebooks for training and evaluation
+
 ├── models/ # Saved trained models (.pkl)
+
 ├── results/ # Confusion matrices, comparison tables, plots
+
 ├── README.md # Project documentation
+
 ├── requirements.txt # Python dependencies
 
 
