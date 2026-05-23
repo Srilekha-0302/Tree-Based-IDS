@@ -91,8 +91,6 @@ Tree-Based-IDS/
 ├── app.py
 ├── README.md
 ├── requirements.txt
-├── Documentation.docx
-├── IDS Final.pdf
 ├── system_architecture.png
 │
 ├── data/
