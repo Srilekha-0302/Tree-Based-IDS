@@ -94,6 +94,7 @@ Tree-Based-IDS/
 ├── system_architecture.png
 │
 ├── data/
+│   ├── cicids2017.csv
 │   ├── sample_input.csv
 │   └── sample_input_predictions.csv
 │
@@ -113,7 +114,7 @@ Tree-Based-IDS/
 │       └── phase2_xgboost_model.pkl
 │
 ├── notebooks/
-│   └── IDS.ipynb
+│   └── ids_model_training.ipynb
 │
 ├── results/
 │   ├── model_comparison_plots.png
