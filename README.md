@@ -1,15 +1,88 @@
-# Intrusion Detection System using Tree-Based Machine Learning Models
-Multi-phase Intrusion Detection System using Decision Tree, Random Forest, and XGBoost on the CICIDS2017 dataset with feature selection, SMOTE oversampling, and stacked ensemble learning.
+# 🛡️ Tree-Based Intrusion Detection System
 
-## 📌 Overview
-This project implements a **multi-phase Intrusion Detection System (IDS)** using classical tree-based machine learning models. It is designed to detect malicious network activity using the **CICIDS2017** dataset, following a structured three-phase pipeline:  
-1. **Phase 1:** Baseline training of Decision Tree, Random Forest, and XGBoost models.  
-2. **Phase 2:** Feature selection and **SMOTE oversampling** to handle class imbalance.  
-3. **Phase 3:** **Stacked Ensemble Learning** for improved accuracy and generalization.  
-
-The system is evaluated using **accuracy, precision, recall, F1-score**, confusion matrices, and **time efficiency analysis**.
+A modern Machine Learning-based Intrusion Detection System (IDS) built using tree-based ensemble models and deployed with an interactive Streamlit dashboard for real-time cyber attack detection.
 
 ---
+
+# 📌 Overview
+
+This project implements a **multi-phase Intrusion Detection System (IDS)** using classical and ensemble-based machine learning models trained on the **CICIDS2017 dataset**.
+
+The system detects malicious network traffic and classifies multiple attack categories such as:
+
+- DoS
+- BruteForce
+- WebAttack
+- PortScan
+- Bot
+- Infiltration
+- BENIGN traffic
+
+The project follows a structured pipeline involving:
+
+- Data preprocessing
+- Feature selection
+- SMOTE oversampling
+- Tree-based model training
+- Ensemble learning
+- Real-time prediction dashboard using Streamlit
+
+---
+
+# 🚀 Features
+
+✅ Real-time cyber attack prediction  
+✅ Interactive Streamlit dashboard  
+✅ Upload custom CSV network traffic data  
+✅ Attack distribution visualization  
+✅ Prediction confidence scores  
+✅ Download prediction results as CSV  
+✅ Feature-selected optimized model  
+✅ Modern light-themed responsive UI  
+
+---
+
+# 🧠 Machine Learning Pipeline
+
+## Phase 1 — Baseline Model Training
+Trained multiple tree-based models on the CICIDS2017 dataset:
+
+- Decision Tree
+- Random Forest
+- XGBoost
+
+---
+
+## Phase 2 — Feature Selection + SMOTE
+Improved model performance through:
+
+- Feature importance ranking
+- Top feature selection
+- SMOTE oversampling for class imbalance handling
+
+---
+
+## Phase 3 — Ensemble Learning
+Implemented stacked ensemble learning using:
+
+### Base Models
+- Decision Tree
+- Random Forest
+- XGBoost
+
+### Meta Learner
+- Logistic Regression
+
+---
+
+# 📊 Model Performance
+
+| Model | Accuracy |
+|---|---|
+| Decision Tree | 99.55% |
+| Random Forest | 99.66% |
+| XGBoost | 99.45% |
+| Stacked Ensemble | **99.72%** |
 
 ## 📂 Project Structure
 IDS-TreeBased/
@@ -20,14 +93,15 @@ IDS-TreeBased/
 
 ├── models/ # Saved trained models (.pkl)
 
-├── results/ # Confusion matrices, comparison tables, plots
+├── app.py
+
+├── results/ # Confusion matrices, comparison tables, plots, UI
 
 ├── documentation.docx # Project Documentation
 
 ├── README.md # Project documentation
 
 ├── requirements.txt # Python dependencies
-
 
 ---
 
@@ -39,51 +113,38 @@ IDS-TreeBased/
 
 ---
 
-## ⚙️ Methodology
-
-### **Phase 1 – Model Training**
-- Models: **Decision Tree**, **Random Forest**, **XGBoost**
-- Trained on the preprocessed dataset without feature reduction.
-
-### **Phase 2 – Feature Selection + SMOTE**
-- Features ranked by average importance from all models.  
-- Selected features covering **90% cumulative importance**.  
-- **SMOTE** applied to balance underrepresented classes (e.g., Infiltration attacks).
-
-### **Phase 3 – Stacked Ensemble**
-- Base models: Decision Tree, Random Forest, XGBoost.  
-- Meta-learner: **Logistic Regression**.  
-- Achieved the **highest accuracy** among all models.
-
----
-
-## 📈 Results
-| Model              | Accuracy  | Precision | Recall  | F1-score |
-|--------------------|-----------|-----------|---------|----------|
-| Decision Tree (P2) | 99.55%    | 99.55%    | 99.55%  | 99.55%   |
-| Random Forest (P2) | **99.66%**| **99.66%**| **99.66%**| **99.66%**|
-| XGBoost (P2)       | 99.45%    | 99.45%    | 99.45%  | 99.45%   |
-| Stacked Ensemble   | **99.72%**| **99.72%**| **99.72%**| **99.72%**|
-
----
-
 ## 🛠️ Tools and Technologies
-- **Languages:** Python 3.10+  
+- **Languages:** Python 
 - **Libraries:** NumPy, Pandas, Scikit-learn, XGBoost, Imbalanced-learn, Seaborn, Matplotlib, Joblib  
-- **Development Tools:** Jupyter Notebook, VS Code  
-- **OS:** Windows 10 / Ubuntu 20.04 LTS  
+- **Development Tools:** Jupyter Notebook, VS Code, Google Colab
+
+# 🖥️ Dashboard UI
+
+## Home Interface
+
+![Home UI](results/UI/home_ui.png)
 
 ---
+
+## Analytics Dashboard
+
+![Dashboard](results/UI/dashboard.png)
+
+---
+
+## Prediction Results
+
+![Prediction Results](results/UI/prediction_results.png)
 
 ## 🚀 How to Run
 ```bash
 # Clone the repository
 git clone https://github.com/Srilekha-0302/Tree-Based-IDS.git
-cd IDS-TreeBased
+cd Tree-Based-IDS
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the notebook
-jupyter notebook notebooks/IDS_SSL.ipynb
+# Run Streamlit App
+streamlit run app.py
 
