@@ -86,23 +86,50 @@ Implemented stacked ensemble learning using:
 | Stacked Ensemble | **99.72%** | 0.1258 |
 
 ## 📂 Project Structure
-IDS-TreeBased/
-
-├── data/ # Dataset files
-
-├── notebooks/ # Jupyter notebooks for training and evaluation
-
-├── models/ # Saved trained models (.pkl)
-
+Tree-Based-IDS/
+│
 ├── app.py
-
-├── results/ # Confusion matrices, comparison tables, plots, UI
-
-├── documentation.docx # Project Documentation
-
-├── README.md # Project documentation
-
-├── requirements.txt # Python dependencies
+├── README.md
+├── requirements.txt
+├── Documentation.docx
+├── IDS Final.pdf
+├── system_architecture.png
+│
+├── data/
+│   ├── CICIDS2017_dataset.csv 
+│   ├── sample_input.csv
+│   └── sample_input_predictions.csv
+│
+├── models/
+│   ├── label_mapping.pkl
+│   ├── selected_features.pkl
+│   ├── stacking_ensemble_model.pkl
+│   │
+│   ├── phase1/
+│   │   ├── decision_tree_model.pkl
+│   │   ├── random_forest_model.pkl
+│   │   └── xgboost_model.pkl
+│   │
+│   └── phase2/
+│       ├── phase2_decision_tree_model.pkl
+│       ├── phase2_random_forest_model.pkl
+│       └── phase2_xgboost_model.pkl
+│
+├── notebooks/
+│   └── IDS.ipynb
+│
+├── results/
+│   ├── model_comparison_plots.png
+│   ├── model_results_phase2_with_time.csv
+│   ├── phase1_vs_phase2.csv
+│   │
+│   ├── phase1/
+│   ├── phase2/
+│   ├── phase3/
+│   └── UI/
+│       ├── home_ui.png
+│       ├── dashboard.png
+│       └── prediction_results.png
 
 ---
 
