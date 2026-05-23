@@ -4,7 +4,7 @@ A modern Machine Learning-based Intrusion Detection System (IDS) built using tre
 
 ---
 
-# 📌 Overview
+# 📌 Overview 
 
 This project implements a **multi-phase Intrusion Detection System (IDS)** using classical and ensemble-based machine learning models trained on the **CICIDS2017 dataset**.
 
