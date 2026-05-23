@@ -94,7 +94,6 @@ Tree-Based-IDS/
 ├── system_architecture.png
 │
 ├── data/
-│   ├── CICIDS2017_dataset.csv 
 │   ├── sample_input.csv
 │   └── sample_input_predictions.csv
 │
