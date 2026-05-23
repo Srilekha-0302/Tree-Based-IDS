@@ -77,12 +77,12 @@ Implemented stacked ensemble learning using:
 
 # 📊 Model Performance
 
-| Model | Accuracy |
-|---|---|
-| Decision Tree | 99.55% |
-| Random Forest | 99.66% |
-| XGBoost | 99.45% |
-| Stacked Ensemble | **99.72%** |
+| Model | Accuracy | Prediction Time (s) |
+|---|---|---|
+| Decision Tree | 99.55% | 0.0016 |
+| Random Forest | 99.66% | 0.0706 |
+| XGBoost | 99.45% | 0.0131 |
+| Stacked Ensemble | **99.72%** | 0.1258 |
 
 ## 📂 Project Structure
 IDS-TreeBased/
