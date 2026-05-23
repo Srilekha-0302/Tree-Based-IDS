@@ -29,16 +29,17 @@ The project follows a structured pipeline involving:
 
 ---
 
-# 🚀 Features
+## ✨ Features
 
-✅ Real-time cyber attack prediction  
-✅ Interactive Streamlit dashboard  
-✅ Upload custom CSV network traffic data  
-✅ Attack distribution visualization  
-✅ Prediction confidence scores  
-✅ Download prediction results as CSV  
-✅ Feature-selected optimized model  
-✅ Modern light-themed responsive UI  
+- Multi-class cyber attack detection
+- Tree-based ML models
+- Feature selection using importance ranking
+- SMOTE oversampling for class balancing
+- Ensemble learning architecture
+- Interactive Streamlit dashboard
+- CSV upload and prediction support
+- Attack distribution visualizations
+- Downloadable prediction results 
 
 ---
 
@@ -118,7 +119,7 @@ IDS-TreeBased/
 - **Libraries:** NumPy, Pandas, Scikit-learn, XGBoost, Imbalanced-learn, Seaborn, Matplotlib, Joblib  
 - **Development Tools:** Jupyter Notebook, VS Code, Google Colab
 
-# 🖥️ Dashboard UI
+# 🖥️ Application Preview
 
 ## Home Interface
 
