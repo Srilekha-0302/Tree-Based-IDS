@@ -86,7 +86,6 @@ Implemented stacked ensemble learning using:
 | Stacked Ensemble | **99.72%** | 0.1258 |
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 ```text
 Tree-Based-IDS/
