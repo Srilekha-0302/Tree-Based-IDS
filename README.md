@@ -86,6 +86,9 @@ Implemented stacked ensemble learning using:
 | Stacked Ensemble | **99.72%** | 0.1258 |
 
 ## 📂 Project Structure
+## 📂 Project Structure
+
+```text
 Tree-Based-IDS/
 │
 ├── app.py
@@ -116,19 +119,19 @@ Tree-Based-IDS/
 ├── notebooks/
 │   └── ids_model_training.ipynb
 │
-├── results/
-│   ├── model_comparison_plots.png
-│   ├── model_results_phase2_with_time.csv
-│   ├── phase1_vs_phase2.csv
-│   │
-│   ├── phase1/
-│   ├── phase2/
-│   ├── phase3/
-│   └── UI/
-│       ├── home_ui.png
-│       ├── dashboard.png
-│       └── prediction_results.png
-
+└── results/
+    ├── model_comparison_plots.png
+    ├── model_results_phase2_with_time.csv
+    ├── phase1_vs_phase2.csv
+    │
+    ├── phase1/
+    ├── phase2/
+    ├── phase3/
+    └── UI/
+        ├── home_ui.png
+        ├── dashboard.png
+        └── prediction_results.png
+```
 ---
 
 ## 📊 Dataset
